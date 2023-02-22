@@ -70,5 +70,20 @@ $btn-padding-x: 20px;
   }
 }
 
+section{
+  @media screen and (max-width: 1200px){
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.section-hd{
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
 /* import bootstrap to set changes */
 @import "~bootstrap/scss/bootstrap";
