@@ -4,7 +4,10 @@ import { Color } from 'react-bootstrap/esm/types';
 export const ProfileCard = [
     {
         id: 0,
+        iconClassName: "material-symbols material-symbols-rounded",
+        iconName: "monitor_heart",
         color: "accent",
+        imagesrc: "/images/Naeem.jpg",
         name: "Naeem Hameed",
         designation: "M.B.B.S, F.C.P.S (Cardiology), F.C.P.S Interventional Cardiology (R) Consultant cardiologist",
         institue: "Faisalabad Institute of Cardiology",
@@ -35,7 +38,10 @@ export const ProfileCard = [
     },
     {
         id: 1,
+        iconClassName: "material-symbols material-symbols-rounded",
+        iconName: "female",
         color: "primary",
+        imagesrc: "/images/Sidra.jpeg",
         name: "Sidra Mushtaq",
         designation: "M.B.B.S, F.C.P.S (Gynae & Obstetrics)",
         institue: "Faisalabad Institute of Cardiology",
