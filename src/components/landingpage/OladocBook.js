@@ -5,7 +5,7 @@ const OladocBook = () => {
   return (
     <section>
       <Container>
-        <Row className="align-items-center">
+        <Row className="align-items-center gy-4">
           <Col lg={7}>
             <h2 className="section-hd">
               Good Service and Better Health with Specialists

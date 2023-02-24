@@ -18,6 +18,12 @@ $nav-tabs-link-active-bg: transparent;
 $nav-tabs-link-active-color: var(--bs-primary);
 $nav-tabs-border-radius: 0;
 
+$input-btn-border-width: 0;
+$input-bg: transparent;
+$input-btn-padding-y: 10px;
+$input-btn-padding-x: 1rem;
+$input-border-radius: 0;
+
 @media screen and (min-width: 1400px) {
   $btn-padding-x: 36px;
   $btn-padding-y: 1rem;

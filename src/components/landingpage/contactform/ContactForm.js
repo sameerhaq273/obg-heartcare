@@ -4,18 +4,39 @@ import Problems from "./Problems";
 
 const ContactForm = () => {
   const [validated, setValidated] = useState(false);
+  const [formStatus, setFormStatus] = React.useState("Send");
 
   const handleSubmit = (event) => {
     const form = event.currentTarget;
     if (form.checkValidity() === false) {
       event.preventDefault();
       event.stopPropagation();
+    } else {
+      setValidated(true);
+
+      event.preventDefault();
+      setFormStatus("Submitting...");
+      const { name, problem, email, phone, date } = event.target.elements;
+      let formValues = {
+        name: name.value,
+        problem: problem.value,
+        email: email.value,
+        phone: phone.value,
+        date: date.value,
+      };
+      if (formValues.problem == "heart") {
+        console.log("send to naeem");
+        window.location.reload(false);
+      } else {
+        console.log(formValues);
+        window.location.reload(false);
+      }
     }
     setValidated(true);
   };
 
   return (
-    <section>
+    <section id="contact-form">
       <Container>
         <div className="text-center">
           <h2 className="section-hd">Book Your Appointment Now</h2>
@@ -30,7 +51,7 @@ const ContactForm = () => {
           validated={validated}
           onSubmit={handleSubmit}
         >
-          <Row className="gy-md-5 gy-4">
+          <Row className="gy-md-5 gy-3">
             <Col md={6}>
               <Form.Group className="mb-3" controlId="name">
                 <Form.Label>Full Name*</Form.Label>
@@ -67,30 +88,21 @@ const ContactForm = () => {
             <Col md={6}>
               <Form.Group className="mb-3" controlId="email">
                 <Form.Label>Email (optional)</Form.Label>
-                <Form.Control
-                  type="email"
-                  placeholder="someone@mail.com"
-                />
-                <Form.Text className="text-muted">
-                  We'll never share your email with anyone else.
-                </Form.Text>
+                <Form.Control type="email" placeholder="someone@mail.com" />
               </Form.Group>
             </Col>
             <Col md={6}>
               <Form.Group className="mb-3" controlId="phone">
                 <Form.Label>Phone*</Form.Label>
-                <Form.Control type="tel" placeholder="03001234567" required />
-                <Form.Text className="text-muted">
-                  We'll never share your phone with anyone else.
-                </Form.Text>
+                <Form.Control type="tel" placeholder="03001234567" pattern="[0][3][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]" required />
                 <Form.Control.Feedback type="invalid">
-                  Your phone number will help us contact you 🤙
+                  Enter a valid phone number that will help us contact you 🤙
                 </Form.Control.Feedback>
               </Form.Group>
             </Col>
             <Col md={6}>
               <Form.Group className="mb-3" controlId="date">
-                <Form.Label>Date of Booking</Form.Label>
+                <Form.Label>Date of Booking*</Form.Label>
                 <Form.Control type="date" required />
                 <Form.Control.Feedback type="invalid">
                   Please choose a date of booking 📅

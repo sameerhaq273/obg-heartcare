@@ -204,7 +204,7 @@ section {
         display: block;
         padding: 0;
       }
-      td{
+      td {
         padding-left: 38px;
       }
     }
@@ -277,9 +277,28 @@ section {
   }
 }
 
-.contact-form{
+.contact-form {
   margin-top: 32px;
-  @media screen and (min-width: 1201px){
+  @media screen and (min-width: 1201px) {
     margin-top: 97px;
   }
+}
+
+footer {
+  background: linear-gradient(
+    to right,
+    #0d9dfd 0% /*bottom-right color*/,
+    #c34b4b 100% /*top-left color*/
+  );
+  * {
+    color: white;
+  }
+  .section-hd {
+    margin-bottom: 1rem;
+  }
+}
+
+.form-control,
+.form-select {
+  border-bottom: 1px solid var(--bs-dark);
 }

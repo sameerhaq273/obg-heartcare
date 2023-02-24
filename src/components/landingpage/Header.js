@@ -16,7 +16,7 @@ export default class Header extends Component {
               <Nav className="ms-auto">
                 {/* <Nav.Link href="#home" variant="primary" Component={Button}>Home</Nav.Link>
                 <Nav.Link href="#link">Link</Nav.Link> */}
-                <Button as="a" variant="outline-primary" className="mx-2">
+                <Button as="a" variant="outline-primary" href="#contact-form" className="mx-2">
                   Book Appointment
                   <span className="material-symbols material-symbols-rounded">arrow_forward</span>
                 </Button>
