@@ -113,7 +113,7 @@ const MeetDoctors = () => {
                   Video consultation is also available. Please leave a message
                   or send an email for video consultation.
                 </p>
-                <Alert variant={text.color}>
+                <Alert variant={text.color} className="mb-0">
                   <Alert.Link href={text.oladoc} target="_blank" className="fw-normal text-decoration-none">
                     <span className="material-symbols material-symbols-rounded">redeem</span>
                     Book an appointment using oladoc and get up-to 50% discount.

@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import Header from '../components/Header';
-import MeetDoctors from '../components/MeetDoctors';
-import Hero from '../components/Hero';
+import Header from '../components/landingpage/Header';
+import MeetDoctors from '../components/landingpage/doctors/MeetDoctors';
+import Hero from '../components/landingpage/Hero';
+import OladocBook from '../components/landingpage/OladocBook';
+import ContactForm from '../components/landingpage/contactform/ContactForm';
 
 export default class LandingPage extends Component {
   render() {
@@ -10,6 +12,8 @@ export default class LandingPage extends Component {
         <Header></Header>
         <Hero></Hero>
         <MeetDoctors></MeetDoctors>
+        <OladocBook></OladocBook>
+        <ContactForm></ContactForm>
       </div>
     )
   }

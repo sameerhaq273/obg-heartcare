@@ -12,7 +12,7 @@ export const ProfileCard = [
         designation: "M.B.B.S, F.C.P.S (Cardiology), F.C.P.S Interventional Cardiology (R) Consultant cardiologist",
         institue: "Faisalabad Institute of Cardiology",
         phone: "03215985482",
-        phoneLink: "callto:+923215985482",
+        phoneLink: "tel:+923215985482",
         email: "dr_naeem80@hotmail.com",
         oladoc: "https://oladoc.com/pakistan/faisalabad/dr/cardiologist/naeem-hameed/428550",
         clinics: [
@@ -46,7 +46,7 @@ export const ProfileCard = [
         designation: "M.B.B.S, F.C.P.S (Gynae & Obstetrics)",
         institue: "Faisalabad Institute of Cardiology",
         phone: "03107468313",
-        phoneLink: "callto:+923107468313",
+        phoneLink: "tel:+923107468313",
         email: "sidramushtaq229@yahoo.com",
         oladoc: "https://oladoc.com/pakistan/faisalabad/dr/gynecologist/sidra-mushtaq-gynecologist/1038739",
         clinics: [
